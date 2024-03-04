@@ -14,8 +14,6 @@ depth = client.futures_order_book(symbol='BTCUSDT')
 # print(depth)
 
 
-
-
 # Get historical candle data
 candles = client.futures_klines(symbol='BTCUSDT', interval=Client.KLINE_INTERVAL_1MINUTE)
 
@@ -31,13 +29,3 @@ if short_rolling > long_rolling:
     print("Buy signal")
 elif short_rolling < long_rolling:
     print("Sell signal")
-
-# # Create a test order
-# order = client.futures_create_test_order(
-#     symbol='BTCUSDT',
-#     side=Client.SIDE_BUY,
-#     type=Client.ORDER_TYPE_MARKET,
-#     quantity=0.001
-# )
-
-# print(order)
