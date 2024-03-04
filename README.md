@@ -22,12 +22,12 @@ Using sentiment analysis from Twitter and Reddit to figure out which cryoto curr
    - [ ] Aggregate sentiment scores for each cryptocurrency.
 
 4. **Data Visualization**
-   - [ ] Create interactive dashboards with Plotly/Dash.
+   - [x] Create interactive dashboards with Plotly/Dash.
    - [ ] Display sentiment trends over time.
    - [ ] Visualize sentiment distribution among different cryptocurrencies.
 
-5. **Access Coinbase API**
-   - [ ] Fetch current prices of top 10 cryptocurrencies identified by sentiment analysis.
+5. **Access Binance API**
+   - [x] Fetch current prices of top 10 cryptocurrencies identified by sentiment analysis.
    - [ ] Compare sentiment analysis results with historical price data.
 
 ### Additional Enhancements
@@ -37,3 +37,8 @@ Using sentiment analysis from Twitter and Reddit to figure out which cryoto curr
 - [ ] Plan for scalability and transitioning from a notebook to a more user-friendly application.
 - [ ] Explore incorporating additional data sources like news articles in future versions.
 - [ ] Investigate custom machine learning models tailored to cryptocurrency discussions.
+
+
+## Progress as of 3/3/2024
+
+- I was able to get a basic trading bot going in the TradingBot folder. This uses the markers from Binance to determine if a certain crypto is a buy or sell. I was also able to visualize the markers using mpfiance. 
