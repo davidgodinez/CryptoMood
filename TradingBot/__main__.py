@@ -10,12 +10,12 @@ api_secret = os.getenv("BINANCE_API_SECRET")
 client = Client(api_key, api_secret, testnet=True)
 
 # Get market depth
-depth = client.futures_order_book(symbol='BTCUSDT')
+depth = client.futures_order_book(symbol='ETHUSDT')
 # print(depth)
 
 
 # Get historical candle data
-candles = client.futures_klines(symbol='BTCUSDT', interval=Client.KLINE_INTERVAL_1MINUTE)
+candles = client.futures_klines(symbol='ETHUSDT', interval=Client.KLINE_INTERVAL_1MINUTE)
 
 # Extract the closing price
 closing_prices = [float(candle[4]) for candle in candles]
